@@ -30,6 +30,9 @@
     {{- partial "anchored_headings.html" .Content -}}
     {{- else }}{{ .Content }}{{ end }}
   </div>
+
+  {{- partial "newsletter.html" . }}
+
   <footer class="post-footer">
     {{- if .Params.tags }}
     <ul class="post-tags">
